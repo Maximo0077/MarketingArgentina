@@ -127,6 +127,15 @@ div .libros img {
   padding: 20px;
 }
 
+.genero-total {
+  display: inline-table;
+  color: white;
+  border: 1px solid white;
+}
+
+.email {
+  display: flex;
+}
 /*------------------PRODUCTOS------------------*/
 
 .productos {
@@ -221,6 +230,18 @@ div .libros-productos img {
   .grid-item {
     grid-column: span 1;
     grid-row: span 1;
+  }
+  .acercade-text {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+  }
+
+  .ubicacion {
+    width: 50px;
+    height: 100px;
+    text-align: center;
+    color: yellow;
   }
 }
 
