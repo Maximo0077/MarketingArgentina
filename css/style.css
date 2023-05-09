@@ -1,4 +1,4 @@
-/*------------------rest------------------*/
+/*-----------------REST------------------*/
 
 * {
   margin: 0%;
@@ -10,95 +10,35 @@ ul {
 a {
   list-style: none;
 }
-/*-----------------header-----------------*/
+/*-----------------HEADER-----------------*/
 
-header nav ul a {
-  text-decoration: none;
-  color: yellow;
-  margin: 65px 10px 65px 10px;
-  font-size: 25px;
-}
-
-header nav ul {
-  display: flex;
-  padding: 10px;
-}
-
-header h1 {
-  font-weight: 700;
-  font-size: 45px;
-  font-family: sans-serif;
-}
-
-header {
+/*------------------MAIN-----------------*/
+main {
   background-color: black;
-  width: 100%;
-  height: 100px;
-  color: white;
-  display: flex;
-  justify-self: center;
-  align-self: center;
-  background-position: center;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
-
-/*------------------main-----------------*/
-.hero {
-  background-color: white;
-  width: 100%;
-  height: 150px;
-  color: black;
-  background-size: cover;
-}
-
-.hero h2 {
-  font-size: 40px;
-  text-align: center;
-  border: 3px black solid;
-  padding: 20px;
-  margin: 20px;
-}
-
-.hero p {
-  background-color: black;
-  width: 100%;
-  color: white;
-  font-size: 30px;
-  text-decoration: none;
-  text-align: center;
-  margin: 0%;
-  padding: 5px;
-}
-
-.bienvenidos h2 {
-  text-align: center;
-  font-size: 35px;
-  color: yellow;
-  background-color: black;
-  width: 100%;
-  height: 70px;
-}
-
-.bienvenidos p {
-  background-color: black;
-  color: yellow;
-  font-size: 15px;
+.fotos div img {
+  padding: 50px;
+  width: 450px;
+  height: 550px;
 }
 
 .productos {
-  background-image: url("../img/HD-wallpaper-black-and-white-book-page.jpg");
-  color: white;
-  text-align: center;
+  background-image: url(../img/HD-wallpaper-black-and-white-book-page.jpg);
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0%;
+  color: white;
+  text-align: center;
   display: inline-block;
-  width: 100%;
 }
 
+.productos-grupos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 .productos h2 {
   font-size: 35px;
   padding: 5px;
@@ -107,45 +47,42 @@ header {
 
 div .libros img {
   width: 350px;
-  height: 450px;
+  height: 400px;
 }
 
 .productos div h3 {
-  background-color: black;
   color: white;
   font-size: 25px;
-  margin: 0;
 }
 
 .productos div .botton {
   text-decoration: none;
   font-size: 25px;
-  color: yellow;
+  color: white;
   margin: 20px;
 }
 
 .libros {
-  background-position: 1px;
+  background-color: black;
   text-align: center;
   display: inline-block;
-  margin: 65px;
-  border: 2px white solid;
-  width: 350px;
-  height: 550px;
+  margin: 40px;
+  border: 3px yellow solid;
+  width: 355px;
+  height: 500px;
 }
 
-/*-----------------footer-----------------*/
+/*-----------------FOOTER-----------------*/
 
 .redes {
-  background-color: whitesmoke;
-  margin: 0px;
+  background-color: white;
+  margin: 5px;
   text-align: center;
 }
 
 .redes p {
-  background-color: black;
-  color: white;
-  font-size: 30px;
+  color: black;
+  font-size: 20px;
 }
 
 .redes img {
@@ -154,34 +91,32 @@ div .libros img {
   left: 50px;
 }
 
-/*---------contacto---------*/
+/*---------CONTACTO--------*/
 
 .registrate {
   background-color: black;
   font-family: sans-serif;
+  padding: 5px;
 }
 
 .registrate h1 {
-  background-color: white;
-  color: black;
+  color: yellow;
   text-align: center;
   font-size: 30px;
 }
 
 .registrate p {
   color: white;
+  border: white solid 1px;
   text-align: center;
   font-size: 25px;
 }
-
 .registrate div {
   background-color: black;
   color: white;
-  text-align: center;
   font-size: 20px;
   display: flex;
   margin: 0%;
-  padding: 15px 10px 15px 10px;
 }
 
 .comentario {
@@ -192,12 +127,169 @@ div .libros img {
   padding: 20px;
 }
 
-/*------------------producto------------------*/
+/*------------------PRODUCTOS------------------*/
 
-/*------------------servicio------------------*/
+.productos {
+  padding: 0%;
+  margin: 0%;
+}
+
+.libros-productos {
+  display: inline-block;
+  background-position: 1px;
+  background-color: black;
+  text-align: center;
+  margin: 20px;
+  border: 3px yellow solid;
+  width: 350px;
+  height: 550px;
+}
+
+.libros-productos p {
+  font-size: 10px;
+  margin: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.productos h2 {
+  color: white;
+  font-size: 30px;
+  padding: 5px;
+  margin: 20px;
+}
+
+div .libros-productos img {
+  width: 330px;
+  height: 430px;
+}
+
+.productos div h3 {
+  color: white;
+  font-size: 25px;
+  margin: 0;
+}
+
+.grid-testimonios {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px;
+}
+
+.grid-testimonios div img {
+  border: 3px solid yellow;
+  border-radius: 30px;
+  width: 70px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.grid-item {
+  border: 1px solid white;
+  padding: 10px;
+}
+/*------------------NOSOTROS------------------*/
+.acercade-text {
+  color: white;
+  text-align: center;
+}
 
 .ubicacion {
   text-align: center;
-  background-color: black;
-  color: white;
+  color: yellow;
+}
+
+/*------------------MEDIAQUERY-------------*/
+
+@media screen and (max-width: 865px) {
+  .grid-testimonios {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 220px;
+  }
+  .grid-item {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .grid-testimonios {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 220px;
+  }
+  .grid-item {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .fotos div img {
+    padding: 50px;
+    width: 250px;
+    height: 350px;
+  }
+  .productos {
+    display: grid;
+  }
+}
+@media screen and (max-width: 440px) {
+  .fotos div img {
+    padding: 40px;
+    width: 100px;
+    height: 200px;
+  }
+  .productos {
+    display: grid;
+  }
+  .productos {
+    background-image: url(../img/HD-wallpaper-black-and-white-book-page.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0%;
+    color: white;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .productos-grupos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .productos h2 {
+    font-size: 20px;
+    padding: 2px;
+    margin: 5px;
+  }
+
+  div .libros img {
+    width: 150px;
+    height: 200px;
+  }
+
+  .productos div h3 {
+    color: white;
+    font-size: 15px;
+  }
+
+  .productos div .botton {
+    text-decoration: none;
+    font-size: 10px;
+    color: white;
+    margin: 5px;
+  }
+
+  .libros {
+    background-color: black;
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+    border: 1px yellow solid;
+    width: 150px;
+    height: 200px;
+  }
 }
