@@ -33,15 +33,12 @@ main {
     margin: 0%;
     color: white;
     text-align: center;
-    display: inline-block; }
+    display: inline-block;
+    width: 100vw; }
     main .productos h2 {
       font-size: 35px;
       padding: 5px;
       margin: 20px; }
-    main .productos .productos-grupo {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap; }
     main .productos .libros {
       background-color: black;
       text-align: center;
@@ -75,73 +72,73 @@ main {
 
 /*-------- ACERCA DE-------*/
 .acercade {
+  display: inline-block;
   color: white;
   text-align: center;
   font-size: 25px; }
-  .acercade .acercade h2 {
+  .acercade h2 {
     color: yellow;
     font-size: 30px; }
+
+.ubicacion {
+  text-align: center; }
 
 /*-------------CONTACTO-----------*/
 .comunicate {
   background-color: white;
   width: 100%;
-  height: 100%;
   color: black;
   text-align: center; }
-  .comunicate h2 {
-    font-size: 30px; }
-    .comunicate h2 img {
-      width: 50px;
-      height: 50px;
-      padding: 10px; }
-  .comunicate .registrate {
-    display: inline-table;
-    background-color: black;
-    font-family: sans-serif;
-    padding: 5px; }
-    .comunicate .registrate h1 {
-      text-align: center;
-      color: yellow;
-      font-size: 50px; }
-    .comunicate .registrate p {
-      text-align: center;
-      color: yellow;
-      font-size: 20px; }
-    .comunicate .registrate div {
-      background-color: black;
-      color: white;
-      font-size: 20px; }
-  .comunicate .genero-total {
-    font-size: 20px;
-    color: white; }
-  .comunicate .email {
-    justify-content: center;
-    padding: 5px; }
-  .comunicate .comentario {
-    background-color: black;
+  .comunicate img {
+    width: 50px;
+    height: 50px;
+    padding: 10px; }
+
+.registrate {
+  display: inline-table;
+  background-color: black;
+  font-family: sans-serif;
+  padding: 5px; }
+  .registrate h2 {
+    text-align: center;
     color: yellow;
-    font-size: 20px;
-    padding: 20px;
-    justify-content: center; }
-    .comunicate .comentario a.button {
-      background-color: yellow;
+    font-size: 50px; }
+  .registrate p {
+    text-align: center;
+    color: yellow;
+    font-size: 20px; }
+  .registrate div {
+    background-color: black;
+    color: white;
+    font-size: 20px; }
+
+.genero-total {
+  font-size: 20px;
+  color: white; }
+
+.email {
+  justify-content: center;
+  padding: 5px; }
+
+.comentario {
+  background-color: black;
+  color: yellow;
+  font-size: 20px;
+  padding: 20px;
+  justify-content: center; }
+  .comentario button {
+    background-color: yellow;
+    color: black;
+    display: block; }
+    .comentario button:hover {
+      background-color: white;
       color: black;
-      display: block; }
-      .comunicate .comentario a.button:hover {
-        background-color: white;
-        color: black;
-        transform: scale(1.1); }
+      transform: scale(1.1); }
 
 /*--------------PRODUCTOS--------------*/
 .productos {
-  padding: 0%;
+  width: 100%;
   margin: 0%; }
-  .productos h2 {
-    color: white;
-    font-size: 30px;
-    padding: 5px;
-    margin: 20px; }
   .productos .libros-productos {
     display: inline-block;
     background-position: 1px;
@@ -149,8 +146,8 @@ main {
     text-align: center;
     margin: 20px;
     border: 3px white solid;
-    width: 350px;
-    height: 550px; }
+    width: 320px;
+    height: 500px; }
     .productos .libros-productos:hover {
       transform: scale(1.1); }
     .productos .libros-productos img {
@@ -181,7 +178,7 @@ main {
   .productos .grid-testimonios {
     background-color: black;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 200px;
     padding: 15px; }
     .productos .grid-testimonios .grid-item {
@@ -229,3 +226,55 @@ main {
   .redes p {
     color: black;
     font-size: 20px; }
+
+@media screen and (max-width: 700px) {
+  .grid-testimonios {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 220px; }
+    .grid-testimonios .grid-item {
+      grid-column: span 1;
+      grid-row: span 1; } }
+
+@media screen and (max-width: 480px) {
+  header img {
+    width: 50px;
+    height: 50px; }
+  .grid-testimonios {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 150px; }
+    .grid-testimonios .grid-item {
+      grid-column: span 1;
+      grid-row: span 1; }
+  .acercade-text {
+    font-size: 15px;
+    color: white;
+    text-align: center; }
+  .productos {
+    width: 100vw; }
+    .productos h2 {
+      font-size: 20px;
+      padding: 2px;
+      margin: 5px; }
+    .productos .libros {
+      background-color: black;
+      text-align: center;
+      display: inline-table;
+      margin: 20px;
+      border: 1px white solid;
+      width: 100px;
+      height: 150px; }
+      .productos .libros img {
+        width: 100%;
+        height: 80%; }
+        .productos .libros img h3 {
+          color: white;
+          font-size: 15px; }
+          .productos .libros img h3 a.botton {
+            text-decoration: none;
+            font-size: 10px;
+            color: white;
+            margin: 5px; }
+  .registrate {
+    display: block;
+    background-color: black;
+    font-family: sans-serif; } }
