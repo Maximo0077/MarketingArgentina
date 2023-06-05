@@ -1,0 +1,15 @@
+/*--PALETA DE COLORES--*/
+$color-principal: black;
+$color-secundario: white;
+$color-terciario: yellow;
+
+/*--MAPAS--*/
+$boton: (
+  boton-fd: black,
+  color-text: $color-terciario,
+  border-boton: 1px solid yellow,
+  border-radius-b: 5px,
+  text-decoration-b: none,
+  font-size-b: 20px,
+  padding-b: 5px,
+);

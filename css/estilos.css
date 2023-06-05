@@ -12,6 +12,8 @@ h1 {
   font-size: 30px;
   text-align: center; }
 
+/*--PALETA DE COLORES--*/
+/*--MAPAS--*/
 header img {
   width: 200px;
   height: 200px; }
@@ -24,7 +26,7 @@ main {
     padding: 50px;
     width: 100%;
     height: 60%; }
-  main .productos {
+  main .principal {
     background: linear-gradient(rgba(0, 0, 0, 0.605), rgba(0, 0, 0, 0.621)), url(../img/HD-wallpaper-black-and-white-book-page.jpg);
     background-size: cover;
     background-position: center;
@@ -32,30 +34,29 @@ main {
     background-repeat: no-repeat;
     margin: 0%;
     color: white;
-    text-align: center;
     display: inline-block;
-    width: 100vw; }
-    main .productos h2 {
+    text-align: center; }
+    main .principal h2 {
       font-size: 35px;
       padding: 5px;
       margin: 20px; }
-    main .productos .libros {
+    main .principal .libros {
       background-color: black;
-      text-align: center;
       display: inline-block;
+      text-align: center;
       margin: 40px;
       border: 2px white solid;
       width: 350px;
       height: 500px; }
-      main .productos .libros:hover {
+      main .principal .libros:hover {
         transform: scale(1.1); }
-      main .productos .libros img {
+      main .principal .libros img {
         width: 100%;
         height: 80%; }
-      main .productos .libros h3 {
+      main .principal .libros h3 {
         color: white;
         font-size: 25px; }
-      main .productos .libros a.botton {
+      main .principal .libros a.botton {
         background-color: black;
         color: yellow;
         border: 1px solid yellow;
@@ -63,7 +64,7 @@ main {
         text-decoration: none;
         font-size: 20px;
         padding: 5px; }
-        main .productos .libros a.botton:hover {
+        main .principal .libros a.botton:hover {
           background-color: yellow;
           color: black;
           border: 1px solid white;
@@ -73,8 +74,8 @@ main {
 /*-------- ACERCA DE-------*/
 .acercade {
   display: inline-block;
-  color: white;
   text-align: center;
+  color: white;
   font-size: 25px; }
   .acercade h2 {
     color: yellow;
@@ -93,6 +94,11 @@ main {
     width: 50px;
     height: 50px;
     padding: 10px; }
+    .comunicate img:hover {
+      padding: 5px;
+      width: 50px;
+      height: 50px;
+      transform: scale(1.1); }
 
 .registrate {
   display: inline-table;
@@ -123,7 +129,6 @@ main {
 .comentario {
   background-color: black;
   color: yellow;
-  font-size: 20px;
   padding: 20px;
   justify-content: center; }
   .comentario button {
@@ -137,14 +142,13 @@ main {
 
 /*--------------PRODUCTOS--------------*/
 .productos {
-  width: 100%;
-  margin: 0%; }
+  text-align: center; }
   .productos .libros-productos {
     display: inline-block;
+    color: white;
     background-position: 1px;
     background-color: black;
-    text-align: center;
-    margin: 20px;
+    margin: 50px;
     border: 3px white solid;
     width: 320px;
     height: 500px; }
@@ -177,8 +181,10 @@ main {
         transition: 1s; }
   .productos .grid-testimonios {
     background-color: black;
+    color: white;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 200px;
     padding: 15px; }
     .productos .grid-testimonios .grid-item {
@@ -228,52 +234,82 @@ main {
     font-size: 20px; }
 
 @media screen and (max-width: 700px) {
-  .grid-testimonios {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 220px; }
-    .grid-testimonios .grid-item {
-      grid-column: span 1;
-      grid-row: span 1; } }
+  .productos {
+    width: 100%;
+    text-align: center; }
+    .productos .grid-testimonios {
+      background-color: black;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 200px;
+      padding: 15px; }
+      .productos .grid-testimonios .grid-item {
+        border: 1px solid white;
+        padding: 10px; }
+        .productos .grid-testimonios .grid-item img {
+          border: 2px solid yellow;
+          border-radius: 50px;
+          width: 60px;
+          height: 50px;
+          object-fit: cover; } }
 
 @media screen and (max-width: 480px) {
-  header img {
-    width: 50px;
-    height: 50px; }
-  .grid-testimonios {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 150px; }
-    .grid-testimonios .grid-item {
-      grid-column: span 1;
-      grid-row: span 1; }
+  main .principal {
+    width: 100%; }
+    main .principal .libros {
+      background-color: black;
+      display: inline-block;
+      text-align: center;
+      margin: 5px;
+      border: 1px white solid;
+      width: 200px;
+      height: 400px; }
+      main .principal .libros img {
+        width: 100%;
+        height: 80%; }
+      main .principal .libros h3 {
+        color: white;
+        font-size: 15px; }
+  .productos {
+    width: 100%;
+    text-align: center; }
+    .productos .libros-productos {
+      background-color: black;
+      display: inline-block;
+      margin: 5px;
+      border: 1px white solid;
+      width: 300px;
+      height: 480px; }
+      .productos .libros-productos img {
+        width: 100%;
+        height: 70%; }
+        .productos .libros-productos img h3 {
+          color: white;
+          font-size: 15px; }
+          .productos .libros-productos img h3 a.botton {
+            text-decoration: none;
+            font-size: 10px;
+            color: white;
+            margin: 2px; }
+    .productos .grid-testimonios {
+      background-color: black;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: 200px;
+      padding: 15px; }
+      .productos .grid-testimonios .grid-item {
+        border: 1px solid white;
+        padding: 10px; }
+        .productos .grid-testimonios .grid-item img {
+          border: 2px solid yellow;
+          border-radius: 50px;
+          width: 60px;
+          height: 50px;
+          object-fit: cover; }
   .acercade-text {
     font-size: 15px;
     color: white;
     text-align: center; }
-  .productos {
-    width: 100vw; }
-    .productos h2 {
-      font-size: 20px;
-      padding: 2px;
-      margin: 5px; }
-    .productos .libros {
-      background-color: black;
-      text-align: center;
-      display: inline-table;
-      margin: 20px;
-      border: 1px white solid;
-      width: 100px;
-      height: 150px; }
-      .productos .libros img {
-        width: 100%;
-        height: 80%; }
-        .productos .libros img h3 {
-          color: white;
-          font-size: 15px; }
-          .productos .libros img h3 a.botton {
-            text-decoration: none;
-            font-size: 10px;
-            color: white;
-            margin: 5px; }
   .registrate {
     display: block;
     background-color: black;

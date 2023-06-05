@@ -1,5 +1,5 @@
 .redes {
-  background-color: white;
+  background-color: $color-secundario;
   text-align: center;
   img {
     padding: 5px;
@@ -13,7 +13,7 @@
     }
   }
   p {
-    color: black;
+    color: $color-principal;
     font-size: 20px;
   }
 }
